@@ -54,19 +54,21 @@ products.forEach(product => {
           data-product-id="${product.id}">
             Add to Cart
           </button>
-        </div>`
+        </div>`;
     
 });
 
- document.querySelector('.js-products-grid').innerHTML= productsHTML;
+ document.querySelector('.js-products-grid')
+   .innerHTML= productsHTML;
 
   function updateCartQuantity(){
+
     let cartQuantity =0;
     cart.forEach((cartItem) =>{
       cartQuantity +=cartItem.quantity;
   });
     document.querySelector('.js-cart-quantity')
-    .innerHTML =cartQuantity;
+     .innerHTML =cartQuantity;
   }
 
  document.querySelectorAll('.js-add-to-cart')
