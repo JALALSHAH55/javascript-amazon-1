@@ -78,7 +78,7 @@ products.forEach(product => {
       const productId= button.dataset.productId;
       addToCart(productId);
       updateCartQuantity();
-      console.log('matchingProduct');
+      
       
     });
   });
