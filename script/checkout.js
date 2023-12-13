@@ -100,6 +100,7 @@ js-cart-item-container-${matchingProduct.id}">
 document.querySelectorAll('.js-delete-link')
   .forEach((link)=>{
     link.addEventListener('click', ()=>{
+      console.log('delete');
         const productId =link.dataset.productId;
         removeFromCart(productId);
 
